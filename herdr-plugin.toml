@@ -1,0 +1,34 @@
+id = "braborec.agent-panel"
+name = "Agent Panel"
+version = "0.1.0"
+min_herdr_version = "0.9.0"
+description = "Right-side info panel per agent: environment, context usage, connectors, and outputs"
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "toggle"
+title = "Toggle agent panel"
+contexts = ["workspace"]
+command = ["python3", "toggle.py"]
+
+[[panes]]
+id = "panel"
+title = "Agent panel"
+placement = "split"
+command = ["python3", "panel.py"]
+
+[[panes]]
+id = "preview"
+title = "File preview"
+placement = "popup"
+width = "85%"
+height = "85%"
+command = ["python3", "preview.py"]
+
+[[panes]]
+id = "skills"
+title = "Skills"
+placement = "popup"
+width = "85%"
+height = "85%"
+command = ["python3", "skills_manager.py"]
