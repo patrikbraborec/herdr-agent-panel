@@ -27,7 +27,7 @@ Cards:
 ## Install
 
 ```bash
-herdr plugin install <owner>/herdr-agent-panel
+herdr plugin install patrikbraborec/herdr-agent-panel
 # or, from a local checkout
 herdr plugin link /path/to/herdr-agent-panel
 ```
